@@ -33,7 +33,7 @@ public class WebMVC implements WebMvcConfigurer {
 		registry.addResourceHandler("/js/**").addResourceLocations("classpath:/static/js/");
 		registry.addResourceHandler("/img/**").addResourceLocations("classpath:/static/img/");
 //		registry.addResourceHandler("/favicons/**").addResourceLocations("classpath:/META-INF/favicons/");
-		registry.addResourceHandler("/files_product/**").addResourceLocations("file:" + fileProduct);
+		registry.addResourceHandler("/files_product/**").addResourceLocations(fileProduct);
 
 	}
 
